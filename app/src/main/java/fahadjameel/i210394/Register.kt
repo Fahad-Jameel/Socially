@@ -12,12 +12,6 @@ class Register : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_register)
-        val logText = findViewById<TextView>(R.id.logi)
-
-        // Set onClickListener
-        logText.setOnClickListener {
-            val intent = Intent(this, Login::class.java) // Replace with your class name
-            startActivity(intent)
-        }
+        // Login link removed from new design
     }
 }

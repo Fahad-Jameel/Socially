@@ -33,7 +33,7 @@
             android:text="Recent Searches"
             android:textStyle="bold"
             android:fontFamily="sans-serif-black"
-            android:textColor="#E8AD05"
+            android:textColor="#7F4A2A"
             android:layout_marginTop="20dp"
             tools:ignore="HardcodedText" />
 

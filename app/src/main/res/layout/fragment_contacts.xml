@@ -19,7 +19,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Contacts"
-                android:textColor="#E8AD05"
+                android:textColor="#7F4A2A"
                 android:fontFamily="sans-serif-black"
                 android:textStyle="bold"
                 android:textSize="25sp"/>
@@ -41,7 +41,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="In Contacts"
-                android:textColor="#E8AD05"
+                android:textColor="#7F4A2A"
                 android:fontFamily="sans-serif-black"
                 android:textStyle="bold"
                 android:textSize="18sp"

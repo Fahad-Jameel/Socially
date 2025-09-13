@@ -34,7 +34,7 @@
                 android:text="Next"
                 android:textStyle="bold"
                 android:fontFamily="sans-serif-black"
-                android:textColor="#E8AD05"
+                android:textColor="#7F4A2A"
                 android:textSize="20sp"
                 android:layout_marginEnd="20dp"
                 tools:ignore="HardcodedText" />
