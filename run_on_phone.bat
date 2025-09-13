@@ -1,5 +1,5 @@
 @echo off
-echo Building and installing ConnectMe app on your phone...
+echo Building and installing Socially app on your phone...
 echo.
 
 REM Check if ADB is available
@@ -37,7 +37,7 @@ if %errorlevel% neq 0 (
 echo.
 echo SUCCESS: App installed successfully!
 echo Launching the app...
-adb shell am start -n com.shaffinimam.i212963/.MainActivity
+adb shell am start -n fahadjameel.i210394/.MainActivity
 
 echo.
 echo App should now be running on your phone!

@@ -1,4 +1,4 @@
-Write-Host "Building and installing ConnectMe app on your phone..." -ForegroundColor Green
+Write-Host "Building and installing Socially app on your phone..." -ForegroundColor Green
 Write-Host ""
 
 # Check if ADB is available
@@ -38,7 +38,7 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host ""
 Write-Host "SUCCESS: App installed successfully!" -ForegroundColor Green
 Write-Host "Launching the app..." -ForegroundColor Yellow
-adb shell am start -n com.shaffinimam.i212963/.MainActivity
+adb shell am start -n fahadjameel.i210394/.MainActivity
 
 Write-Host ""
 Write-Host "App should now be running on your phone!" -ForegroundColor Green
