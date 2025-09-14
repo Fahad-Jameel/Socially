@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#fff"
-    android:layout_marginTop="30dp"
     tools:context=".Home">
 
     <ScrollView
@@ -18,54 +17,93 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <LinearLayout
+            <!-- Top Bar with Camera, Socially, and Right Icons -->
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:layout_height="56dp"
+                android:background="#FFFFFF"
+                android:paddingStart="16dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:elevation="2dp">
 
+                <!-- Camera Icon (Left) -->
+                <ImageView
+                    android:id="@+id/camera_icon"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/photocamera"
+                    android:contentDescription="Camera"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:tint="#7F4A2A" />
+
+                <!-- Socially Heading (Center) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="Socially"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:textColor="#000000"
+                    android:fontFamily="sans-serif"
+                    tools:ignore="HardcodedText" />
+
+                <!-- Right Icons Container -->
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="10dp">
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
 
-                    <TextView
+                    <!-- Instagram Icon with Notification Badge -->
+                    <RelativeLayout
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="My Community"
-                        android:textColor="#242424"
-                        android:textSize="20sp"
-                        android:fontFamily="sans-serif-black"
-                        android:textStyle="bold"
-                        tools:ignore="HardcodedText" />
+                        android:layout_marginEnd="16dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="A Place for all your questions"
-                        android:textColor="#242424"
-                        android:textSize="15sp"
-                        android:fontFamily="sans-serif"
-                        tools:ignore="HardcodedText" />
+                        <ImageView
+                            android:id="@+id/instagram_icon"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:src="@drawable/instagram"
+                            android:contentDescription="Instagram"
+                            android:clickable="true"
+                            android:focusable="true" />
+
+                        <!-- Notification Badge -->
+                        <View
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:layout_alignTop="@id/instagram_icon"
+                            android:layout_alignEnd="@id/instagram_icon"
+                            android:layout_marginTop="2dp"
+                            android:layout_marginEnd="2dp"
+                            android:background="@drawable/notification_badge"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                    <!-- Paper Airplane Icon -->
+                    <ImageView
+                        android:id="@+id/message_icon"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/send"
+                        android:contentDescription="Messages"
+                        android:clickable="true"
+                        android:focusable="true"
+                        app:tint="#7F4A2A" />
 
                 </LinearLayout>
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:padding="20dp">
-
-                    <ImageButton
-                        android:id="@+id/dm"
-                        android:layout_width="25dp"
-                        android:layout_height="25dp"
-                        android:layout_gravity="right"
-                        android:background="@drawable/send"
-                        android:backgroundTint="@color/send_button"
-                        tools:ignore="ContentDescription,RtlHardcoded" />
-                </LinearLayout>
-            </LinearLayout>
+            </RelativeLayout>
 
             <HorizontalScrollView
                 android:layout_width="match_parent"

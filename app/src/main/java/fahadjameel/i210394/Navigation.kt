@@ -26,7 +26,7 @@ class Navigation : AppCompatActivity() {
                 R.id.nav_search -> Search()
                 R.id.nav_profile -> Profile()
                 R.id.nav_plus -> Plus()
-                R.id.nav_contacts -> Contacts()
+                R.id.nav_likes -> Contacts()
                 else -> null
             }
 

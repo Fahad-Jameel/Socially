@@ -13,17 +13,17 @@
         tools:ignore="HardcodedText" />
     <item
         android:id="@+id/nav_plus"
-        android:icon="@drawable/more"
-        android:title="More"
+        android:icon="@drawable/post"
+        android:title="Post"
+        tools:ignore="HardcodedText" />
+    <item
+        android:id="@+id/nav_likes"
+        android:icon="@drawable/like"
+        android:title="Likes"
         tools:ignore="HardcodedText" />
     <item
         android:id="@+id/nav_profile"
         android:icon="@drawable/profile"
         android:title="Profile"
-        tools:ignore="HardcodedText" />
-    <item
-        android:id="@+id/nav_contacts"
-        android:icon="@drawable/contacts"
-        android:title="Contacts"
         tools:ignore="HardcodedText" />
 </menu>

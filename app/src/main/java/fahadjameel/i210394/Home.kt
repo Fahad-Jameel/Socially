@@ -7,6 +7,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.ImageView
 
 
 class Home : Fragment() {
@@ -20,9 +21,10 @@ class Home : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val dm = view.findViewById<ImageButton>(R.id.dm)
-
-        dm.setOnClickListener {
+        
+        // Set up click handler for paper airplane icon (message icon)
+        val messageIcon = view.findViewById<ImageView>(R.id.message_icon)
+        messageIcon?.setOnClickListener {
             val intent = Intent(requireContext(), DM::class.java)
             startActivity(intent)
         }
