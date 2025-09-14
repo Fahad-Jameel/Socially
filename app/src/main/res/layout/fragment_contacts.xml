@@ -4,59 +4,556 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Contacts"
-    android:layout_marginTop="30dp"
-    android:background="@color/white">
+    android:background="#FFFFFF">
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingStart="20dp"
-            android:paddingEnd="20dp">
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Contacts"
-                android:textColor="#7F4A2A"
-                android:fontFamily="sans-serif-black"
-                android:textStyle="bold"
-                android:textSize="25sp"/>
-            <EditText
+            android:padding="16dp">
+
+            <!-- Activity Item 1: karennne liked 3 posts -->
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:background="@drawable/textinp"
-                android:hint="Search for friends"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/prf"
+                        android:background="@drawable/circular_profile_picture"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="karennne liked 3 posts. 3h"
+                            android:textSize="14sp"
+                            android:textColor="#000000"
+                            android:fontFamily="sans-serif"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Thumbnail images for liked posts -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="52dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/poster"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="4dp"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/poster"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="4dp"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/poster"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Activity Item 2: Multiple users liked joshua_l photo -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
                 android:gravity="center_vertical"
-                android:textColor="#000"
-                android:textColorHint="#4a4a4a"
-                android:paddingStart="20dp"
-                android:layout_margin="10dp"
-                android:drawableRight="@drawable/search24"
-                android:paddingEnd="10dp"
-                android:inputType="text"
-                tools:ignore="Autofill,HardcodedText,RtlHardcoded,TextFields,UseCompatTextViewDrawableXml" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="In Contacts"
-                android:textColor="#7F4A2A"
-                android:fontFamily="sans-serif-black"
-                android:textStyle="bold"
-                android:textSize="18sp"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="20dp"/>
+                android:layout_marginBottom="20dp">
 
-            <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv"
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/prf"
+                        android:background="@drawable/circular_profile_picture"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/prf"
+                        android:background="@drawable/circular_profile_picture"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="kiero_d, zackjohn and craig_love liked joshua_l photo. 3h"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/poster"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <!-- Activity Item 3: kiero_d started following craig_love -->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="#ffffff">
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
 
-            </androidx.recyclerview.widget.RecyclerView>
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/prf"
+                    android:background="@drawable/circular_profile_picture"
+                    android:scaleType="centerCrop"
+                    android:clipToOutline="true"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="kiero_d started following craig_love. 3h"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Activity Item 4: craig_love liked 8 posts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/prf"
+                        android:background="@drawable/circular_profile_picture"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="craig_love liked 8 posts. 3h"
+                            android:textSize="14sp"
+                            android:textColor="#000000"
+                            android:fontFamily="sans-serif"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- 6 thumbnail images in 2 rows -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="52dp">
+
+                    <!-- First row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="4dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/poster"
+                            android:scaleType="centerCrop"
+                            android:layout_marginEnd="4dp"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/poster"
+                            android:scaleType="centerCrop"
+                            android:layout_marginEnd="4dp"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/poster"
+                            android:scaleType="centerCrop"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+
+                    <!-- Second row -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/poster"
+                            android:scaleType="centerCrop"
+                            android:layout_marginEnd="4dp"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/poster"
+                            android:scaleType="centerCrop"
+                            android:layout_marginEnd="4dp"
+                            tools:ignore="ContentDescription" />
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/poster"
+                            android:scaleType="centerCrop"
+                            tools:ignore="ContentDescription" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!-- Activity Item 5: maxjacobson and zackjohn liked mis_potter's post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                android:layout_height="40dp"
+                        android:src="@drawable/prf"
+                        android:background="@drawable/circular_profile_picture"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/prf"
+                        android:background="@drawable/circular_profile_picture"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="maxjacobson and zackjohn liked mis_potter's post. 3h"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/poster"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <!-- Activity Item 6: maxjacobson and craig_love liked martini_rond's post -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <RelativeLayout
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/prf"
+                        android:background="@drawable/circular_profile_picture"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/prf"
+                        android:background="@drawable/circular_profile_picture"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        tools:ignore="ContentDescription" />
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="maxjacobson and craig_love liked martini_rond's post. 3h"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/poster"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <!-- Activity Item 7: karennne liked martini_rond's comment -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="20dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/prf"
+                    android:background="@drawable/circular_profile_picture"
+                    android:scaleType="centerCrop"
+                    android:clipToOutline="true"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:layout_marginStart="12dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="karennne liked martini_rond's comment: @martini_rond Nice! 3h"
+                        android:textSize="14sp"
+                        android:textColor="#000000"
+                        android:fontFamily="sans-serif"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/poster"
+                    android:scaleType="centerCrop"
+                    tools:ignore="ContentDescription" />
+
+            </LinearLayout>
+
+            <!-- Activity Item 8: maxjacobson liked 3 posts -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/prf"
+                        android:background="@drawable/circular_profile_picture"
+                        android:scaleType="centerCrop"
+                        android:clipToOutline="true"
+                        tools:ignore="ContentDescription" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_marginStart="12dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="maxjacobson liked 3 posts. 3h"
+                            android:textSize="14sp"
+                            android:textColor="#000000"
+                            android:fontFamily="sans-serif"
+                            tools:ignore="HardcodedText" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <!-- Thumbnail images for liked posts -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="52dp">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/poster"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="4dp"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/poster"
+                        android:scaleType="centerCrop"
+                        android:layout_marginEnd="4dp"
+                        tools:ignore="ContentDescription" />
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/poster"
+                        android:scaleType="centerCrop"
+                        tools:ignore="ContentDescription" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
         </LinearLayout>
-    </ScrollView>
 
+    </ScrollView>
 
 </FrameLayout>
